@@ -2,21 +2,22 @@
   "name": "webpack-tutorial",
   "version": "1.0.0",
   "description": "",
-  "main": "profile.js",
+  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "NODE_ENV=production webpack --config webpack.config.js --progress --colors",
+    "dev": "NODE_ENV=development webpack --progress --config webpack.config.js",
+    "postinstall": "npm install webpack"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "jquery": "^3.1.1",
-    "underscore": "^1.8.3"
-  },
-  "devDependencies": {
+    "underscore": "^1.8.3",
     "angular": "^1.6.2",
     "css-loader": "^0.26.1",
     "extract-text-webpack-plugin": "git+https://github.com/webpack-contrib/extract-text-webpack-plugin.git",
     "style-loader": "^0.13.1",
-    "url-loader": "^0.5.7"
+    "url-loader": "^0.5.7",
+    "webpack": "^2.2.1"
   }
 }
