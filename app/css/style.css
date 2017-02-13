@@ -1,0 +1,20 @@
+table {
+    width: 200px !important;
+    margin-top: 20px;
+}
+
+.success {
+    text-decoration: line-through;
+    color: grey;
+}
+
+.removeBtn {
+    content: url('../img/cross.png');
+    height: 20px;
+    width: 20px;
+    cursor: pointer;
+}
+
+.tdicon {
+    width: 32px !important;
+}
