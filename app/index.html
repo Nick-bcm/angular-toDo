@@ -23,7 +23,7 @@
     <table class="table table-hover table-sm table-responsive">
         <tr ng-repeat="item in list.items" class="{{item.isDone ? 'success' : ''}}">
             <td class="tdicon">
-                <input type="checkbox" clss="checkbox" ng-model="item.isDone">
+                <input type="checkbox" class="checkbox" ng-model="item.isDone">
             </td>
             <td>
                 <div class="done-{{item.isDone}}">{{item.name}}</div>
